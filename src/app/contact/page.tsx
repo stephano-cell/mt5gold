@@ -36,7 +36,7 @@ export default function ContactPage() {
           </a>
 
           <a
-            href="https://www.mql5.com/en/users/immunetraders"
+            href="https://www.mql5.com/en/users/thrivenex"
             target="_blank"
             rel="noopener noreferrer"
             className="p-6 rounded-xl border border-white/10 hover:border-gold-500/30 bg-white/[0.02] transition-all group"
@@ -53,7 +53,7 @@ export default function ContactPage() {
           </a>
 
           <a
-            href="https://www.youtube.com/@ImmuneTraders"
+            href="https://www.youtube.com/@thrivenex"
             target="_blank"
             rel="noopener noreferrer"
             className="p-6 rounded-xl border border-white/10 hover:border-gold-500/30 bg-white/[0.02] transition-all group"
@@ -68,7 +68,7 @@ export default function ContactPage() {
               YouTube
             </h3>
             <p className="text-sm text-gray-400 mt-1">
-              @ImmuneTraders - Free courses
+              @thrivenex - Free courses
             </p>
           </a>
 

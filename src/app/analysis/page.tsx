@@ -32,7 +32,7 @@ export default function AnalysisPage() {
               Daily analysis posts will appear here. In the meantime, catch the latest on YouTube.
             </p>
             <a
-              href="https://www.youtube.com/@ImmuneTraders"
+              href="https://www.youtube.com/@thrivenex"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-lg transition-colors"

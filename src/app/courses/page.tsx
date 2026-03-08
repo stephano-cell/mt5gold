@@ -100,7 +100,7 @@ export default function CoursesPage() {
         {/* YouTube CTA */}
         <div className="text-center mt-12">
           <a
-            href="https://www.youtube.com/@ImmuneTraders"
+            href="https://www.youtube.com/@thrivenex"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border border-red-500/30 text-red-400 hover:bg-red-500/10 rounded-lg transition-colors"

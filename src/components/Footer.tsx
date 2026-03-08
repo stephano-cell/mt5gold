@@ -17,7 +17,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4 mt-4">
               <a
-                href="https://www.youtube.com/@ImmuneTraders"
+                href="https://www.youtube.com/@thrivenex"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-gold-400 transition-colors"
@@ -38,7 +38,17 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.mql5.com/en/users/immunetraders"
+                href="https://x.com/thrivenex"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-gold-400 transition-colors"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+              <a
+                href="https://www.mql5.com/en/users/thrivenex"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-gold-400 transition-colors text-sm font-bold"
@@ -113,7 +123,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-xs text-gray-500">
-            &copy; {new Date().getFullYear()} MT5Gold.com - ImmuneTraders. All
+            &copy; {new Date().getFullYear()} MT5Gold.com. All
             rights reserved.
           </p>
           <p className="text-xs text-gray-600 mt-2 sm:mt-0">

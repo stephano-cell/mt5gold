@@ -117,7 +117,7 @@ export default function AboutPage() {
                 Telegram: @thrivenex
               </a>
               <a
-                href="https://www.mql5.com/en/users/immunetraders"
+                href="https://www.mql5.com/en/users/thrivenex"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-gold-400 hover:text-gold-300 transition-colors"
