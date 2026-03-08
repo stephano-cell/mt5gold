@@ -1,65 +1,106 @@
-import Image from "next/image";
+import HeroSection from "@/components/HeroSection";
+import FeatureSection from "@/components/FeatureSection";
+import ProductCard from "@/components/ProductCard";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <>
+      <HeroSection />
+
+      {/* Products Section */}
+      <section className="py-20 bg-gradient-to-b from-transparent to-white/[0.02]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              Expert Advisors
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Two EAs, one proven engine. Choose based on your experience level
+              and risk tolerance.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <ProductCard
+              name="MT5Phoenix"
+              description="The full-featured EA with 40+ configurable parameters. For experienced traders who want complete control over every aspect of the strategy."
+              features={[
+                "Full parameter control (EMAs, ATR, swing lookback)",
+                "Multiple trailing stop modes",
+                "Partial profit taking with break-even",
+                "Session filters and daily risk limits",
+                "BOS and pullback entry modes",
+                "Long and short independently configurable",
+              ]}
+              stats={[
+                { label: "Expected Value", value: "2.21R" },
+                { label: "Win Rate", value: "24.5%" },
+                { label: "Profit Factor", value: "1.74" },
+                { label: "Sales", value: "33+" },
+              ]}
+              mql5Link="https://www.mql5.com/en/market/product/127380"
+              price="$149"
+              badge="ESTABLISHED"
+              highlight
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+            <ProductCard
+              name="Golden Raven"
+              description="Same proven engine as MT5Phoenix, pre-configured with optimized parameters. Just pick your risk profile and go. Perfect for beginners."
+              features={[
+                "Same core engine as MT5Phoenix",
+                "Two risk profiles: Medium and High",
+                "Only 2 settings to configure",
+                "Pre-optimized for XAUUSD",
+                "Push notifications included",
+                "Ideal for VPS set-and-forget",
+              ]}
+              stats={[
+                { label: "Risk Profiles", value: "2" },
+                { label: "Setup Time", value: "2 min" },
+                { label: "Parameters", value: "2" },
+                { label: "Symbol", value: "XAUUSD" },
+              ]}
+              mql5Link="https://www.mql5.com/en/market/product/golden-raven"
+              price="$30/mo"
+              badge="NEW"
+            />
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <FeatureSection />
+
+      {/* CTA Section */}
+      <section className="py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="rounded-2xl border border-gold-500/20 bg-gradient-to-b from-gold-500/10 to-transparent p-12">
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Ready to automate your gold trading?
+            </h2>
+            <p className="text-gray-400 mb-8 max-w-xl mx-auto">
+              Join 33+ traders using MT5Phoenix. Start with Golden Raven if you
+              want simplicity, or go full control with MT5Phoenix.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://www.mql5.com/en/market/product/127380"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-gold-500/20"
+              >
+                Get MT5Phoenix
+              </a>
+              <a
+                href="/courses"
+                className="px-8 py-3 border border-white/10 hover:border-gold-500/30 text-gray-300 hover:text-gold-400 font-semibold rounded-lg transition-all"
+              >
+                Watch Free Courses
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
