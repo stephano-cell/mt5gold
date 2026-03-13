@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import FeatureSection from "@/components/FeatureSection";
 import ProductCard from "@/components/ProductCard";
 import EmailSignup from "@/components/EmailSignup";
+import AffiliateBanner from "@/components/AffiliateBanner";
 
 export const metadata: Metadata = {
   title: "MT5Gold - Best Gold Trading Expert Advisors for MetaTrader 5",
@@ -65,6 +66,9 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <HeroSection />
+
+      {/* Affiliate Banner */}
+      <AffiliateBanner size="728x90" placement="homepage-below-hero" className="py-6" />
 
       {/* Products Section */}
       <section className="py-20 bg-gradient-to-b from-transparent to-white/[0.02]">

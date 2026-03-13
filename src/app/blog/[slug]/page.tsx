@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getPost, getAllSlugs } from "@/data/posts";
 import { notFound } from "next/navigation";
 import ShareBar from "./ShareBar";
+import AffiliateBanner from "@/components/AffiliateBanner";
 
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr + "T00:00:00");
@@ -143,6 +144,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           className="article-body max-w-none"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+
+        {/* Affiliate banner after content */}
+        <AffiliateBanner size="300x250" placement="blog-after-content" className="my-10" />
 
         {/* Sources */}
         {post.sources && post.sources.length > 0 && (

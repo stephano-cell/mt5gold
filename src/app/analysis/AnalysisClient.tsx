@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import EmailSignup from "@/components/EmailSignup";
 import ShareButtons from "@/components/ShareButtons";
+import AffiliateBanner from "@/components/AffiliateBanner";
 
 const PLAYLIST_ID = "PL0jl9MLZ-srbzGxfFgGZxA6nw46nt6Bh2";
 
@@ -103,6 +104,8 @@ export default function AnalysisClient({ videoId: propVideoId, videoTitle: propV
                 />
               </div>
             </div>
+            {/* Affiliate banner below video */}
+            <AffiliateBanner size="300x250" placement="analysis-below-video" className="mt-6" />
           </div>
 
           {/* Sidebar: full playlist */}
