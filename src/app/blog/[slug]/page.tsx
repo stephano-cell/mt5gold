@@ -139,6 +139,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           </div>
         )}
 
+        {/* Affiliate banner before content */}
+        <AffiliateBanner size="728x90" placement="blog-top" className="mb-8" />
+
         {/* Content */}
         <div
           className="article-body max-w-none"
