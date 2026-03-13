@@ -148,9 +148,6 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
-        {/* Affiliate banner after content */}
-        <AffiliateBanner size="300x250" placement="blog-after-content" className="my-10" />
-
         {/* Sources */}
         {post.sources && post.sources.length > 0 && (
           <div className="mt-12 pt-8 border-t border-white/10">
