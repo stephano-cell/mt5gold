@@ -25,6 +25,51 @@ export type Post = {
 // Always prepend newest first.
 export const posts: Post[] = [
   {
+    slug: "midday-pulse-2026-03-13",
+    title: "Friday, March 13 — Mid-Day Pulse: Brent Holds $100, All Eyes on PCE at 13:30 UTC",
+    headline: "Oil Anchored at $100 as Goldman Hikes Forecast, PCE Looms",
+    date: "2026-03-13",
+    time: "11:00 UTC",
+    category: "market-pulse",
+    excerpt:
+      "Brent crude refuses to budge from triple digits after Goldman hiked its March forecast. BTC extends its bounce above $72K. The main event is still ahead: PCE inflation data at 13:30 UTC.",
+    image: "/blog/midday-2026-03-13.jpg",
+    imageAlt: "Oil tanker in the Persian Gulf amid Strait of Hormuz tensions",
+    imageSource: "Reuters / CNN",
+    assets: [
+      { name: "Bitcoin", symbol: "₿", logo: "", price: "$72,486", change: "+3.0%", positive: true },
+      { name: "Ethereum", symbol: "ETH", logo: "", price: "$2,128", change: "+2.8%", positive: true },
+      { name: "Gold", symbol: "Au", logo: "", price: "$5,096", change: "-1.2%", positive: false },
+      { name: "S&P 500", symbol: "SPX", logo: "", price: "6,673", change: "flat", positive: false },
+      { name: "Brent Oil", symbol: "OIL", logo: "", price: "$100.46", change: "+9.2%", positive: true },
+    ],
+    content: `
+<h2>What Moved This Morning</h2>
+
+<ul>
+<li><strong>Oil stays triple digits.</strong> Brent holds above $100 after yesterday's 9.2% spike. Iran's new supreme leader Mojtaba Khamenei reaffirmed Hormuz stays closed. Goldman Sachs raised its March Brent average forecast above $100 and sees $85 in April only if shipping resumes.</li>
+
+<li><strong>BTC quietly grinding higher.</strong> Bitcoin pushed to $72,486 (+3%), extending the overnight bounce from $69,800. Fear and Greed remains at 15 (Extreme Fear), but price action keeps diverging from sentiment. The $69K floor is holding through repeated shocks.</li>
+
+<li><strong>Gold fading.</strong> Spot gold slipped to $5,096, down over 1% on the day as dollar strength wins over the safe-haven bid. The $5,100 level that held all week has cracked. Watch $5,050 as next support.</li>
+
+<li><strong>S&P futures flat before the big number.</strong> Equities are in wait-and-see mode after yesterday's 1.5% drop. Polymarket has 66% odds of a down open, but real volume won't come until after PCE.</li>
+
+<li><strong>WTI crude at $96.</strong> Recovering from a sharp selloff earlier in the week, up 9.7% from Wednesday's low. Two more tanker attacks off Iraq and UAE coasts are keeping risk premium elevated.</li>
+</ul>
+
+<h2>Afternoon Watch</h2>
+
+<p><strong>13:30 UTC: January PCE data.</strong> This is the event of the day, possibly the week. Consensus is +0.4% MoM core. A hot print kills what's left of rate cut hopes and likely sends BTC back toward $69K and gold below $5,050. A cool print could spark a relief rally across the board. Trade around it or sit it out, but don't ignore it.</p>
+`,
+    sources: [
+      { label: "Reuters — Oil settles up 9%", url: "https://www.reuters.com/business/energy/oil-climbs-tankers-are-attacked-iraqi-waters-amid-middle-east-war-2026-03-12/" },
+      { label: "CNBC — Brent closes at $100", url: "https://www.cnbc.com/2026/03/12/oil-prices-jump-iea-record-reserve-release-markets-doubt-relief.html" },
+      { label: "Reuters — Goldman hikes Brent forecast", url: "https://www.reuters.com/business/energy/goldman-hikes-average-brent-oil-forecast-over-100-barrel-march-2026-03-13/" },
+      { label: "CoinGecko", url: "https://www.coingecko.com/" },
+    ],
+  },
+  {
     slug: "morning-analysis-2026-03-13",
     title: "Friday, March 13 — Morning Analysis: BTC Bounces 3% as PCE Day Collides With $100 Oil",
     headline: "BTC Reclaims $71K Overnight, but PCE and $100 Brent Loom Large",
