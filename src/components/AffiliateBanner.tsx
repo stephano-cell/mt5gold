@@ -146,7 +146,7 @@ export default function AffiliateBanner({ size, placement, className = '' }: Aff
           <div className="relative w-[300px] h-[250px] bg-black rounded-xl overflow-hidden border border-white/10">
             <img
               src="/banners/bybit-starter-rewards.jpg"
-              alt="Bybit Starter Rewards - Get up to $30,100 USDT"
+              alt="Bybit Welcome Rewards - Up to $5,100+ in Trading Coupons"
               className="w-full h-full object-contain bg-black"
               loading="lazy"
             />
@@ -157,8 +157,9 @@ export default function AffiliateBanner({ size, placement, className = '' }: Aff
                style={{ background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)' }}>
             <img src="/banners/bybit-starter-rewards.jpg" alt="Bybit" className="h-[70px] w-auto rounded-lg object-cover" loading="lazy" />
             <div className="flex-1 min-w-0">
-              <div className="text-white font-bold text-sm sm:text-base">Bybit Starter Rewards</div>
-              <div className="text-orange-400 text-xs sm:text-sm font-semibold">Get up to $30,100 USDT</div>
+              <div className="text-white font-bold text-sm sm:text-base">Bybit Welcome Rewards</div>
+              <div className="text-orange-400 text-xs sm:text-sm font-semibold">Up to $5,100+ in Trading Coupons</div>
+              <div className="text-gray-500 text-[10px]">Over 80% of users win $100 or more</div>
             </div>
             <div className="flex-shrink-0 bg-orange-500 hover:bg-orange-400 text-black font-bold text-sm px-4 py-2 rounded-lg transition-colors">
               Claim Now →
