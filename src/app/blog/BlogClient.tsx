@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { posts } from "@/data/posts";
+import AffiliateBanner from "@/components/AffiliateBanner";
 
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr + "T00:00:00");
@@ -197,6 +198,10 @@ export default function BlogClient() {
             // "Latest" badge only on the absolute newest post, and only when it's visible
             const isLatest = post.slug === latestSlug;
             return (
+              <>{/* Affiliate banner after every 3rd post */}
+              {idx > 0 && idx % 3 === 0 && (
+                <AffiliateBanner size="728x90" placement={`blog-feed-after-${idx}`} className="my-2" />
+              )}
               <article
                 key={post.slug}
                 className={`rounded-2xl border overflow-hidden transition-all duration-300
@@ -290,6 +295,7 @@ export default function BlogClient() {
                   </div>
                 )}
               </article>
+              </>
             );
           })}
         </div>
