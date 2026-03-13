@@ -78,12 +78,12 @@ export default function Home() {
               Expert Advisors
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Two EAs, one proven engine. Choose based on your experience level
-              and risk tolerance.
+              Professional-grade Expert Advisors for MetaTrader 5. From fully automated
+              trading to single-trade execution.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             <ProductCard
               name="MT5Phoenix"
               description="The full-featured EA with 40+ configurable parameters. For experienced traders who want complete control over every aspect of the strategy."
@@ -129,6 +129,29 @@ export default function Home() {
               price="from $30/mo"
               badge="NEW"
               logo="/golden-raven-logo.png"
+            />
+
+            <ProductCard
+              name="One Shot"
+              description="Set your trade conditions and walk away. One Shot fires a single trade when your setup triggers, manages SL/TP and partial close, then removes itself. For any symbol, any timeframe."
+              features={[
+                "One trade, then done. No re-entries",
+                "4 stop loss modes: Manual, EMA, ATR, Wick",
+                "Partial TP with breakeven move",
+                "Auto lot sizing from USD or % risk",
+                "Expiry timer (auto-cancel if not triggered)",
+                "Push notifications for every event",
+              ]}
+              stats={[
+                { label: "Symbols", value: "All" },
+                { label: "Timeframes", value: "All" },
+                { label: "SL Modes", value: "4" },
+                { label: "Price", value: "FREE" },
+              ]}
+              mql5Link="https://www.mql5.com/en/market/product/oneshot"
+              price="FREE"
+              badge="FREE"
+              logo="/oneshot-logo.jpg"
             />
           </div>
         </div>

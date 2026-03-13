@@ -25,6 +25,90 @@ export type Post = {
 // Always prepend newest first.
 export const posts: Post[] = [
   {
+    slug: "evening-review-2026-03-13",
+    title: "Friday, March 13 — Evening Review: Oil Holds Triple Digits as Iran War Grinds Into Week Two",
+    headline: "Oil Stays Above $100, S&P Posts Third Straight Losing Week",
+    date: "2026-03-13",
+    time: "19:00 UTC",
+    category: "evening-review",
+    excerpt:
+      "Brent crude closed above $101 as the Iran war enters its second week with no ceasefire in sight. The S&P 500 dropped 0.6% to cap its third consecutive losing week. Bitcoin defied the gloom, climbing to $71,076 amid Extreme Fear. Gold pulled back below $5,100 despite the geopolitical backdrop.",
+    image: "/blog/evening-2026-03-13.jpg",
+    imageAlt: "Traders react to volatile oil-driven markets amid Iran war uncertainty",
+    imageSource: "AP Photo",
+    assets: [
+      { name: "Bitcoin", symbol: "₿", logo: "", price: "$71,076", change: "+1.7%", positive: true },
+      { name: "Ethereum", symbol: "ETH", logo: "", price: "$2,101", change: "+2.4%", positive: true },
+      { name: "Gold", symbol: "Au", logo: "", price: "$5,066", change: "-1.7%", positive: false },
+      { name: "S&P 500", symbol: "SPX", logo: "", price: "6,633", change: "-0.6%", positive: false },
+      { name: "WTI Oil", symbol: "OIL", logo: "", price: "$98.03", change: "+2.4%", positive: true },
+    ],
+    content: `
+<h2>End-of-Week Wrap</h2>
+
+<p>Friday closed out the most volatile week for global markets since the Iran war began on March 1. Every session this week was dominated by the same question: how long will Hormuz stay shut? The answer remains unclear, and that uncertainty is pricing into everything.</p>
+
+<p>The <strong>S&P 500 fell 0.6%</strong> to close near 6,633, capping its third straight losing week. The index briefly rallied in the morning on hopes that oil would stay below $100, but Brent climbed back to <strong>$101.95</strong> by the afternoon as Iran's new Supreme Leader Mojtaba Khamenei reiterated that the strait would remain closed. WTI settled at <strong>$98.03</strong>, up 2.4% on the day and roughly 46% higher for the month.</p>
+
+<p>Tech stocks bore the brunt of the selling. The Nasdaq dropped 1.0%, dragged lower by growth names sensitive to rate expectations. Utilities (+1.5%) and financials (+1.0%) were the only S&P sectors to close green, as investors rotated into defensives.</p>
+
+<h2>PCE Inflation: Worse Than Expected</h2>
+
+<p>The January PCE report landed at 13:30 UTC and confirmed what markets feared. Core PCE rose 3.1% year-over-year, the highest reading in nearly two years. Monthly core came in at +0.4%, matching consensus but leaving no room for the Fed to pivot.</p>
+
+<p>This data predates the oil shock. With gasoline prices surging past $5/gallon in many U.S. states since the war began, February and March inflation prints are likely to be materially worse. Rate cut expectations have collapsed to just one cut priced for December, down from three a month ago.</p>
+
+<p>University of Michigan consumer sentiment (preliminary March) ticked down to its lowest reading of the year. The 5-year inflation expectations component edged higher, a worrying sign that elevated fuel costs are starting to anchor in consumer psychology.</p>
+
+<h2>Crypto: Quiet Resilience</h2>
+
+<p><strong>Bitcoin held $71,076</strong>, up 1.7% on the day. The $69,000 floor has now survived an entire week of macro shocks without breaking, which is structurally bullish regardless of the Fear and Greed Index sitting at just 15 (Extreme Fear). The disconnect between sentiment and price is widening.</p>
+
+<p><strong>Ethereum gained 2.4%</strong> to $2,101, outperforming BTC for the second straight day. ETH has quietly reclaimed the $2,100 level and held it through multiple retests.</p>
+
+<h3>Notable Altcoin Movers</h3>
+
+<ul>
+<li><strong>TURBO</strong> surged 33% to lead the day, riding meme momentum.</li>
+<li><strong>AI tokens rallied hard:</strong> FET, RENDER, and TAO all posted double-digit gains as the AI narrative returned ahead of Nvidia's GTC conference next week.</li>
+<li><strong>Pi Network (PI)</strong> extended its post-listing rally after a Kraken listing announcement.</li>
+<li><strong>NEAR</strong> led AI-adjacent coins on ecosystem growth (747+ active AI agents on NEAR protocol).</li>
+<li>Blue-chip alts (SOL, XRP, ADA, BNB) traded 3-5% higher across the board.</li>
+</ul>
+
+<h2>Gold Fades Despite Risk-Off Backdrop</h2>
+
+<p>Gold slipped to <strong>$5,066</strong>, down 1.7% and below the $5,100 support that held all week. The selling is counterintuitive given the geopolitical environment, but dollar strength is winning the tug-of-war. The DXY continues to benefit from rate-cut repricing, and gold is losing its bid as real yields climb.</p>
+
+<p>Next support sits at $5,050. If that cracks, the $4,950 area becomes the target. Gold bulls need Hormuz resolution fears (dollar-negative) or a Fed pivot signal to regain momentum.</p>
+
+<h2>Overnight Watch</h2>
+
+<p><strong>Key levels heading into the weekend:</strong></p>
+
+<ul>
+<li><strong>BTC:</strong> Support $69,000 (the line in the sand). Resistance $72,500 (Monday's high), then $74,000 (gap fill from last week).</li>
+<li><strong>ETH:</strong> Support $2,050. Resistance $2,200 (pre-war level).</li>
+<li><strong>Gold:</strong> Support $5,050. Resistance $5,150.</li>
+<li><strong>S&P 500:</strong> Support 6,600 (round number + fib level). Resistance 6,770 (broken support, now resistance).</li>
+<li><strong>Brent:</strong> $100 is the psychological level. If it holds through the weekend, expect $105+ next week. A diplomatic breakthrough could send it toward $85 fast.</li>
+</ul>
+
+<h2>The Week Ahead</h2>
+
+<p>All eyes stay on the Iran war. Trump hinted at "more action" to address oil flows but gave no timeline. The IEA's 400-million-barrel strategic reserve release has done little to calm markets. Nvidia's GTC conference (Monday) could provide a tech catalyst. Otherwise, expect oil to keep driving everything.</p>
+
+<p>Crypto's resilience through this week of chaos is the standout story. When Extreme Fear meets price stability, the resolution is usually higher. But geopolitics could still override technicals if Hormuz escalates further.</p>
+`,
+    sources: [
+      { label: "AP — US stocks lose ground as Iran war pressures oil", url: "https://www.thereporteronline.com/2026/03/13/financial-markets-oil-prices-iran-war/" },
+      { label: "Reuters — Global stocks fall, oil stays high", url: "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-03-13/" },
+      { label: "Reuters — Analysts reassess oil forecasts", url: "https://www.reuters.com/business/energy/analysts-reassess-oil-price-estimates-iran-conflict-disrupts-markets-2026-03-13/" },
+      { label: "CoinGecko", url: "https://www.coingecko.com/" },
+      { label: "Alternative.me Fear & Greed Index", url: "https://alternative.me/crypto/fear-and-greed-index/" },
+    ],
+  },
+  {
     slug: "midday-pulse-2026-03-13",
     title: "Friday, March 13 — Mid-Day Pulse: Brent Holds $100, All Eyes on PCE at 13:30 UTC",
     headline: "Oil Anchored at $100 as Goldman Hikes Forecast, PCE Looms",
