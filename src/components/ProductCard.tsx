@@ -7,6 +7,7 @@ interface ProductCardProps {
   price: string;
   badge?: string;
   highlight?: boolean;
+  logo?: string;
 }
 
 export default function ProductCard({
@@ -18,33 +19,54 @@ export default function ProductCard({
   price,
   badge,
   highlight,
+  logo,
 }: ProductCardProps) {
   return (
     <div
-      className={`relative rounded-2xl p-8 border transition-all hover:scale-[1.02] ${
+      className={`relative rounded-2xl p-8 border transition-all duration-300 hover:scale-[1.02] ${
         highlight
-          ? "border-gold-500/40 bg-gradient-to-b from-gold-500/10 to-transparent gold-glow"
-          : "border-white/10 bg-white/[0.02] hover:border-gold-500/20"
+          ? "border-[#E07820]/40 bg-gradient-to-b from-[#E07820]/10 to-transparent hover:shadow-xl hover:shadow-[#E07820]/20"
+          : "border-white/10 bg-white/[0.02] hover:border-[#E07820]/30 hover:bg-[#E07820]/5"
       }`}
     >
+      {/* Badge */}
       {badge && (
-        <div className="absolute -top-3 left-6 px-3 py-1 bg-gold-500 text-navy-950 text-xs font-bold rounded-full">
+        <div className="absolute -top-3 left-6 px-3 py-1 bg-gradient-to-r from-[#F5A623] to-[#E07820] text-black text-xs font-bold rounded-full shadow-md shadow-[#E07820]/30">
           {badge}
         </div>
       )}
 
-      <h3 className="text-2xl font-bold text-white mb-3">{name}</h3>
-      <p className="text-gray-400 mb-6">{description}</p>
+      {/* Logo + Title */}
+      <div className="flex items-center gap-5 mb-5">
+        {logo ? (
+          <img src={logo} alt={name} className="w-32 h-32 object-contain flex-shrink-0 drop-shadow-2xl" />
+        ) : (
+          <div className="w-32 h-32 rounded-2xl bg-gradient-to-br from-[#F5A623] to-[#C43A1A] flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#E07820]/30">
+            <span className="text-5xl font-black text-black">
+              {name.charAt(0)}
+            </span>
+          </div>
+        )}
+        <div>
+          <h3 className="text-2xl font-bold bg-gradient-to-r from-[#F5A623] via-[#E07820] to-[#C43A1A] bg-clip-text text-transparent">
+            {name}
+          </h3>
+        </div>
+      </div>
+
+      <p className="text-gray-400 mb-6 text-sm leading-relaxed">{description}</p>
 
       {/* Stats grid */}
       <div className="grid grid-cols-2 gap-3 mb-6">
         {stats.map((stat) => (
           <div
             key={stat.label}
-            className="bg-white/5 rounded-lg p-3 text-center"
+            className="rounded-lg p-3 text-center border border-[#E07820]/10 bg-[#E07820]/5 hover:border-[#E07820]/30 transition-colors"
           >
-            <div className="text-lg font-bold text-gold-400">{stat.value}</div>
-            <div className="text-xs text-gray-500">{stat.label}</div>
+            <div className="text-2xl font-black bg-gradient-to-r from-[#F5A623] to-[#E07820] bg-clip-text text-transparent">
+              {stat.value}
+            </div>
+            <div className="text-xs text-gray-500 mt-0.5">{stat.label}</div>
           </div>
         ))}
       </div>
@@ -53,26 +75,16 @@ export default function ProductCard({
       <ul className="space-y-2 mb-8">
         {features.map((feature) => (
           <li key={feature} className="flex items-start text-sm text-gray-300">
-            <svg
-              className="w-4 h-4 text-gold-500 mr-2 mt-0.5 flex-shrink-0"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
+            <span className="w-4 h-4 rounded-full bg-gradient-to-r from-[#F5A623] to-[#E07820] flex items-center justify-center mr-2 mt-0.5 flex-shrink-0 text-black text-[10px] font-bold">
+              ✓
+            </span>
             {feature}
           </li>
         ))}
       </ul>
 
       {/* Price + CTA */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between pt-4 border-t border-white/5">
         <div>
           <span className="text-2xl font-bold text-white">{price}</span>
         </div>
@@ -80,13 +92,13 @@ export default function ProductCard({
           href={mql5Link}
           target="_blank"
           rel="noopener noreferrer"
-          className={`px-6 py-2.5 rounded-lg font-semibold transition-all ${
+          className={`px-6 py-2.5 rounded-lg font-semibold transition-all duration-300 ${
             highlight
-              ? "bg-gold-500 hover:bg-gold-400 text-navy-950"
-              : "border border-gold-500/30 hover:border-gold-500/60 text-gold-400 hover:bg-gold-500/5"
+              ? "bg-gradient-to-r from-[#F5A623] to-[#E07820] hover:from-[#E07820] hover:to-[#C43A1A] text-black transform hover:scale-105 hover:shadow-lg hover:shadow-[#E07820]/40"
+              : "border border-[#E07820]/30 hover:border-[#F5A623]/60 text-[#F5A623] hover:bg-[#E07820]/10 hover:text-[#F5A623]"
           }`}
         >
-          View on MQL5
+          View on MQL5 →
         </a>
       </div>
     </div>

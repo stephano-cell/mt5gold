@@ -1,0 +1,4 @@
+name = "mt5gold-chat"
+main = "index.js"
+compatibility_date = "2024-01-01"
+account_id = "756dbd2b1ea2c3e2dddf5245f79a4502"

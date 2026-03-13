@@ -22,12 +22,12 @@ const features = [
   {
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
       </svg>
     ),
-    title: "Set & Forget",
+    title: "Actively Reviewed",
     description:
-      "Runs 24/5 on any VPS or home computer. No manual intervention needed once configured.",
+      "Regularly tested and updated with optimized parameters. We monitor performance and push improvements so your EA stays sharp.",
   },
   {
     icon: (
@@ -80,7 +80,7 @@ export default function FeatureSection() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="p-6 rounded-xl border border-white/5 bg-white/[0.02] hover:border-gold-500/20 transition-all group"
+              className="p-6 rounded-xl border border-white/5 bg-white/[0.02] hover:border-[#E07820]/40 hover:bg-gradient-to-br hover:from-[#E07820]/5 hover:to-transparent hover:shadow-lg hover:shadow-[#E07820]/5 hover:-translate-y-1 transition-all duration-300 group"
             >
               <div className="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-400 mb-4 group-hover:bg-gold-500/20 transition-colors">
                 {feature.icon}

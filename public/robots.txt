@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mt5gold.com/sitemap.xml
+Host: https://mt5gold.com

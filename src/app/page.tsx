@@ -1,10 +1,69 @@
+import type { Metadata } from "next";
 import HeroSection from "@/components/HeroSection";
 import FeatureSection from "@/components/FeatureSection";
 import ProductCard from "@/components/ProductCard";
+import EmailSignup from "@/components/EmailSignup";
+
+export const metadata: Metadata = {
+  title: "MT5Gold - Best Gold Trading Expert Advisors for MetaTrader 5",
+  description:
+    "MT5Phoenix and Golden Raven: professional XAUUSD Expert Advisors built by a real trader. Proven backtests, free daily analysis, and free trading courses.",
+  alternates: { canonical: "https://mt5gold.com" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mt5gold.com/#website",
+      url: "https://mt5gold.com",
+      name: "MT5Gold",
+      description: "Automated Gold Trading Expert Advisors for MetaTrader 5",
+      publisher: { "@id": "https://mt5gold.com/#organization" },
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://mt5gold.com/#organization",
+      name: "MT5Gold",
+      url: "https://mt5gold.com",
+      sameAs: [
+        "https://x.com/thrivenex",
+        "https://t.me/thrivenex",
+        "https://www.youtube.com/@thrivenex",
+        "https://www.mql5.com/en/users/thrivenex",
+      ],
+    },
+    {
+      "@type": "SoftwareApplication",
+      name: "Golden Raven EA",
+      applicationCategory: "FinanceApplication",
+      operatingSystem: "MetaTrader 5",
+      description:
+        "Beginner-friendly XAUUSD Expert Advisor. Pre-optimized with just 2 settings. Choose your risk profile and go.",
+      offers: { "@type": "Offer", price: "30", priceCurrency: "USD", priceValidUntil: "2026-12-31" },
+      url: "https://www.mql5.com/en/market/product/168148",
+    },
+    {
+      "@type": "SoftwareApplication",
+      name: "MT5Phoenix EA",
+      applicationCategory: "FinanceApplication",
+      operatingSystem: "MetaTrader 5",
+      description:
+        "Advanced XAUUSD Expert Advisor with 40+ parameters. Full control over every aspect of the strategy.",
+      offers: { "@type": "Offer", price: "149", priceCurrency: "USD", priceValidUntil: "2026-12-31" },
+      url: "https://www.mql5.com/en/market/product/150332",
+    },
+  ],
+};
 
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection />
 
       {/* Products Section */}
@@ -34,13 +93,14 @@ export default function Home() {
               ]}
               stats={[
                 { label: "Expected Value", value: "2.21R" },
-                { label: "Win Rate", value: "24.5%" },
+                { label: "Win Rate", value: "24-45%*" },
                 { label: "Profit Factor", value: "1.74" },
                 { label: "Sales", value: "33+" },
               ]}
-              mql5Link="https://www.mql5.com/en/market/product/127380"
-              price="$149"
+              mql5Link="https://www.mql5.com/en/market/product/150332"
+              price="from $30/mo"
               badge="ESTABLISHED"
+              logo="/mt5phoenix-logo.jpg"
               highlight
             />
 
@@ -61,15 +121,18 @@ export default function Home() {
                 { label: "Parameters", value: "2" },
                 { label: "Symbol", value: "XAUUSD" },
               ]}
-              mql5Link="https://www.mql5.com/en/market/product/golden-raven"
-              price="$30/mo"
+              mql5Link="https://www.mql5.com/en/market/product/168148"
+              price="from $30/mo"
               badge="NEW"
+              logo="/golden-raven-logo.png"
             />
           </div>
         </div>
       </section>
 
       <FeatureSection />
+
+      <EmailSignup />
 
       {/* CTA Section */}
       <section className="py-20">
@@ -84,18 +147,27 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://www.mql5.com/en/market/product/127380"
+                href="https://www.mql5.com/en/market/product/168148"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3 bg-gold-500 hover:bg-gold-400 text-navy-950 font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-gold-500/20"
+                className="px-8 py-3 bg-gradient-to-r from-[#F5A623] to-[#E07820] hover:from-[#E07820] hover:to-[#C43A1A] text-black font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#E07820]/30 hover:scale-105"
               >
-                Get MT5Phoenix
+                Get Golden Raven
               </a>
               <a
-                href="/courses"
-                className="px-8 py-3 border border-white/10 hover:border-gold-500/30 text-gray-300 hover:text-gold-400 font-semibold rounded-lg transition-all"
+                href="https://t.me/mt5goldcom"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 border border-[#0088cc]/40 hover:border-[#0088cc]/70 text-gray-300 hover:text-[#0088cc] font-semibold rounded-lg transition-all duration-300 hover:bg-[#0088cc]/10 hover:shadow-lg hover:shadow-[#0088cc]/20 hover:scale-105 flex items-center justify-center gap-2"
               >
-                Watch Free Courses
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                Join Telegram
+              </a>
+              <a
+                href="/blog"
+                className="px-8 py-3 border border-white/10 hover:border-[#E07820]/40 text-gray-300 hover:text-[#F5A623] font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#E07820]/10 hover:scale-105"
+              >
+                Read Our Blog
               </a>
             </div>
           </div>

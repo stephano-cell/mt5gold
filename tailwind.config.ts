@@ -39,6 +39,25 @@ const config: Config = {
         sans: ["Inter", "system-ui", "sans-serif"],
         display: ["Inter", "system-ui", "sans-serif"],
       },
+      keyframes: {
+        shake: {
+          "0%, 100%": { transform: "translateX(0)" },
+          "20%": { transform: "translateX(-4px)" },
+          "40%": { transform: "translateX(4px)" },
+          "60%": { transform: "translateX(-4px)" },
+          "80%": { transform: "translateX(4px)" },
+        },
+        "error-pulse": {
+          "0%":   { boxShadow: "0 0 0 0 rgba(239,68,68,0)" },
+          "30%":  { boxShadow: "0 0 0 4px rgba(239,68,68,0.35)" },
+          "70%":  { boxShadow: "0 0 0 6px rgba(239,68,68,0.15)" },
+          "100%": { boxShadow: "0 0 0 0 rgba(239,68,68,0)" },
+        },
+      },
+      animation: {
+        shake: "shake 0.5s ease-in-out",
+        "error-pulse": "error-pulse 0.8s ease-out",
+      },
     },
   },
   plugins: [],
