@@ -136,8 +136,8 @@ export const metadata: Metadata = {
   },
 };
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID; // e.g. G-XXXXXXXXXX
-const CF_BEACON = process.env.NEXT_PUBLIC_CF_BEACON; // Cloudflare Web Analytics token
+const GA_ID = "G-SX5P3B8BJ0";
+const CF_BEACON = process.env.NEXT_PUBLIC_CF_BEACON; // Cloudflare Web Analytics token (add later)
 
 export default function RootLayout({
   children,
