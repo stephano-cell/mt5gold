@@ -148,7 +148,7 @@ export default function Home() {
                 { label: "SL Modes", value: "4" },
                 { label: "Price", value: "FREE" },
               ]}
-              mql5Link="https://www.mql5.com/en/market/product/oneshot"
+              mql5Link="https://www.mql5.com/en/market/product/168796"
               price="FREE"
               badge="FREE"
               logo="/oneshot-logo.jpg"

@@ -121,7 +121,7 @@ export const products: Product[] = [
       { label: "SL Modes", value: "4" },
       { label: "Price", value: "Free" },
     ],
-    mql5Link: "https://www.mql5.com/en/market/product/oneshot",
+    mql5Link: "https://www.mql5.com/en/market/product/168796",
   },
   {
     id: "5-ema-cross",
