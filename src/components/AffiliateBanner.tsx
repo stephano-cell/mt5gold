@@ -143,13 +143,16 @@ export default function AffiliateBanner({ size, placement, className = '' }: Aff
         }`}
       >
         {size === '300x250' ? (
-          <div className="relative w-[300px] h-[250px] bg-black rounded-xl overflow-hidden border border-white/10">
-            <img
-              src="/banners/bybit-starter-rewards.jpg"
-              alt="Bybit Starter Rewards - Get up to $30,100 USDT"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
+          <div className="relative w-[300px] h-[250px] bg-black rounded-xl overflow-hidden border border-white/10 flex flex-col items-center justify-center text-center p-6"
+               style={{ background: 'linear-gradient(160deg, #0a0a0a 0%, #1a1200 50%, #0a0a0a 100%)' }}>
+            <div className="text-orange-400 text-xs font-semibold tracking-widest uppercase mb-2">Bybit Starter Rewards</div>
+            <div className="text-white text-3xl font-extrabold leading-tight mb-1">$30,100</div>
+            <div className="text-gray-300 text-sm mb-4">USDT in Welcome Bonuses</div>
+            <div className="text-gray-400 text-xs mb-4">Register, Deposit & Trade</div>
+            <div className="bg-orange-500 hover:bg-orange-400 text-black font-bold text-sm px-6 py-2.5 rounded-lg transition-colors">
+              Claim Now →
+            </div>
+            <div className="absolute top-3 right-3 text-[10px] text-gray-600">Ad</div>
           </div>
         ) : (
           /* 728x90 leaderboard version */
