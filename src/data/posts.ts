@@ -25,6 +25,79 @@ export type Post = {
 // Always prepend newest first.
 export const posts: Post[] = [
   {
+    slug: "weekend-recap-2026-03-14",
+    title: "Saturday, March 14 — Weekend Recap: Hormuz Standoff Pushes Oil Past $100 for Second Straight Day",
+    headline: "Oil Above $100, Gold Slides, Defense Stocks Hit 52-Week Highs",
+    date: "2026-03-14",
+    time: "11:00 UTC",
+    category: "market-review",
+    excerpt:
+      "Brent crude closed above $103 as Iran's Strait of Hormuz blockade enters its third week. The S&P 500 posted its third consecutive losing week. Defense contractors LMT, RTX, and NOC hit new 52-week highs while Bitcoin held $70,500 and gold retreated to $5,020.",
+    image: "/blog/weekend-2026-03-14.jpg",
+    imageAlt: "Oil tankers near the Strait of Hormuz during the Iran conflict blockade",
+    imageSource: "TradingView",
+    assets: [
+      { name: "Bitcoin", symbol: "₿", logo: "", price: "$70,557", change: "-2.7%", positive: false },
+      { name: "Gold", symbol: "Au", logo: "", price: "$5,020", change: "-2.0%", positive: false },
+      { name: "S&P 500", symbol: "SPX", logo: "", price: "6,632", change: "-1.6% wk", positive: false },
+      { name: "Brent Oil", symbol: "OIL", logo: "", price: "$103.14", change: "+10% wk", positive: true },
+      { name: "WTI Oil", symbol: "WTI", logo: "", price: "$98.71", change: "+8% wk", positive: true },
+    ],
+    content: `
+<h2>The Big Picture</h2>
+
+<p>The Iran war is grinding into its third week, and the Strait of Hormuz remains effectively shut. That single fact is driving everything in global markets right now. Over 1,000 cargo ships, mostly oil and gas tankers, sit idle or rerouted. The energy shock is real, and it is accelerating.</p>
+
+<p>On Friday, <strong>Brent crude closed at $103.14</strong>, up 2.67% on the day and roughly <strong>10% higher for the week</strong>. That follows last week's 27.9% surge, the largest weekly gain in oil since Covid-era trading in 2020. <strong>WTI settled at $98.71</strong>, up 3.11% and capping its second week above 8% gains. The IEA announced a record release of 400 million stockpiled barrels. It barely moved the needle.</p>
+
+<p>Trump told G7 leaders mid-week that Iran was "about to surrender." Hours later, Iran's new Supreme Leader Mojtaba Khamenei went on state television and vowed to keep fighting. An Iranian military spokesperson warned of "$200 oil" if the conflict continues. Neither side is blinking.</p>
+
+<h2>Equities: Three Weeks of Bleeding</h2>
+
+<p>The <strong>S&P 500 closed at 6,632</strong>, down 1.6% for the week and posting its third consecutive weekly decline. The index hit a new 2026 low on Friday. It now sits about 5% below its January highs near 7,002.</p>
+
+<p>The VIX spiked above 27, reflecting growing nervousness that this is not a short-lived event. Barclays noted that "investors still believe in the Trump put" but warned that every additional day Hormuz stays closed pushes markets deeper into stagflationary territory. Central bank decisions next week will be critical.</p>
+
+<p>The one bright spot: defense contractors. <strong>Lockheed Martin (LMT), RTX Corporation, and Northrop Grumman (NOC) all hit fresh 52-week highs</strong> on Friday. The war premium continues to expand as Pentagon procurement expectations rise and allied nations increase defense spending.</p>
+
+<h2>Bitcoin: Holding the Line</h2>
+
+<p><strong>Bitcoin trades near $70,557</strong>, down about 2.7% over the past 24 hours and roughly 8% off its early-March highs near $73,600. The $69,000 support level has now held through two full weeks of macro shocks, which remains structurally significant.</p>
+
+<p>ETF flows have cooled. Net inflows dropped to $619 million last week, down sharply from the $3.7 billion pace seen in Q4 2025. Rising oil prices are pulling capital toward energy trades and safe havens, leaving risk assets like crypto competing for a smaller pool. The Fear and Greed Index sits at 15 (Extreme Fear), but price has not confirmed the panic.</p>
+
+<h2>Gold: Pullback Despite Risk-Off</h2>
+
+<p><strong>Gold dropped 2% to $5,020/oz</strong> on Friday, pressured by a stronger dollar as traders priced in a more hawkish Fed. The metal is still up over 30% year-to-date and well above the $4,000 level it broke through in January. But the near-term dynamic is clear: dollar strength from rate repricing is outweighing safe-haven demand.</p>
+
+<p>Central bank buying remains robust in the background. China, India, and Turkey continue accumulating reserves. The pullback looks corrective rather than structural.</p>
+
+<h2>Oil and Energy: The Core of Everything</h2>
+
+<p>Oil is the story. <strong>Brent above $103, WTI at $98.71.</strong> The Strait of Hormuz carries roughly 20% of global oil and LNG supply. That supply is gone for now.</p>
+
+<p>U.S. gasoline prices have blown past $5/gallon in many states. The January PCE inflation report already showed core at 3.1% year-over-year, the highest in two years, and that was before the oil shock. February and March prints will be materially worse. Rate cut expectations have collapsed to a single cut priced for December, down from three a month ago.</p>
+
+<p>EnQuest CEO Amjad Bseisu compared the situation to the 1973 Arab oil embargo, noting that "then we saw quadrupling of prices" and predicting this crisis will be "longer and harder" than previous disruptions.</p>
+
+<h2>What to Watch Monday</h2>
+
+<ul>
+<li><strong>Central bank signals:</strong> Fed, ECB, and BOJ all face hawkish repricing from the oil shock. Any dovish tilt could spark a risk rally.</li>
+<li><strong>Hormuz developments:</strong> Any credible ceasefire signal or military escalation will move oil 5-10% in either direction.</li>
+<li><strong>Nvidia GTC conference:</strong> Kicks off Monday. AI narrative could provide a counter-catalyst for tech stocks if the keynote delivers.</li>
+<li><strong>BTC $69,000 support:</strong> A break below this level on high volume would signal a deeper risk-off rotation into the $62,000-65,000 range.</li>
+</ul>
+`,
+    sources: [
+      { label: "CNBC — Oil closes above $100 for second day", url: "https://www.cnbc.com/2026/03/13/oil-100-price-brent-wti-trump-iran-war-surrender-khamenei.html" },
+      { label: "CNBC — S&P 500 posts third-straight losing week", url: "https://www.cnbc.com/2026/03/12/stock-market-today-live-updates.html" },
+      { label: "Reuters — Trump says US struck Iran's Kharg Island", url: "https://www.reuters.com/world/middle-east/both-sides-dig-iran-war-approaches-two-week-mark-2026-03-13/" },
+      { label: "Bloomberg — Latest Oil Market Analysis", url: "https://www.bloomberg.com/news/articles/2026-03-12/latest-oil-market-news-and-analysis-for-march-13" },
+      { label: "ETF Trends — Bitcoin ETF Flows Cool to $619M", url: "https://finance.yahoo.com/news/bitcoin-etf-flows-cool-619-144540632.html" },
+    ],
+  },
+  {
     slug: "evening-review-2026-03-13",
     title: "Friday, March 13 — Evening Review: Oil Holds Triple Digits as Iran War Grinds Into Week Two",
     headline: "Oil Stays Above $100, S&P Posts Third Straight Losing Week",
